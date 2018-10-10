@@ -1,8 +1,8 @@
-//alert('Hello word');
-const say = function(name)
-{
-    return `Hello ${name}`;
-};
-
-export default say;
-//say - блок с фоном не дефолтным и выводить там текст сорбщения вместо алерта, читать доки по бабель и вебпак установить линтер
+function addBlock(say) {
+  alert('Important');
+  var say = document.createElement('say');
+  say.className = 'my-class';
+  say.id = 'my-id';
+  say.style.backgroundColor = 'green';
+  say.innerHTML = 'Hello {word}';
+}
